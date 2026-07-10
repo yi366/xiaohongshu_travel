@@ -11,7 +11,7 @@
 ## 三、所需依赖库
 pip install requests pandas beautifulsoup4
 
-## 四、使用步骤
+## 四、主要使用步骤
 1. 小红书搜索文旅相关笔记（城市旅游、Citywalk、小众景点等），复制带/item/的笔记详情链接
 2. 将多条链接填入代码中 url_list 列表
 3. VSCode终端运行爬虫：
