@@ -13,3 +13,9 @@
 1. 安装项目全部依赖
 ```shell
 pip install -r requirements.txt
+## 项目开发截图
+全部开发过程截图存放于 `/screenshot` 目录，包含：
+1. 项目本地分支列表截图
+2. 完整Git提交开发日志截图
+3. 爬虫程序正常运行终端截图
+4. 原始数据集 raw.csv 文件截图
