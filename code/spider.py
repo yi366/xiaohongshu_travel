@@ -46,7 +46,8 @@ if __name__ == "__main__":
         "https://www.xiaohongshu.com/explore/69ccad090000000023020f5b?xsec_token=AB3bex3LvrKxvmp3twBJswJHKESRY2g4oym9SFzrwCY6A=&xsec_source=pc_search&source=web_explore_feed",
         "https://www.xiaohongshu.com/explore/6a0efbb90000000006034efa?xsec_token=ABw-XPm0Xr4U4c8qhM07qMr4sFAfXw8aKnKkd8fwb3dgs=&xsec_source=pc_search&source=web_explore_feed",
         "https://www.xiaohongshu.com/explore/6a0edada000000003601b79b?xsec_token=ABw-XPm0Xr4U4c8qhM07qMrzhS2F87LzfcCzs7Sapkit8=&xsec_source=pc_search&source=web_explore_feed",
-        "https://www.xiaohongshu.com/explore/6a0598610000000037037220?xsec_token=ABLh8VhLsswcEWgwEQB_EMgPznlqT5V2Ad1QKDwW_i4Gs=&xsec_source=pc_search&source=web_explore_feed"
+        "https://www.xiaohongshu.com/explore/6a0598610000000037037220?xsec_token=ABLh8VhLsswcEWgwEQB_EMgPznlqT5V2Ad1QKDwW_i4Gs=&xsec_source=pc_search&source=web_explore_feed",
+        "https://www.xiaohongshu.com/explore/68ea1c8f0000000003039274?xsec_token=AB7kYDUdIFmJJ_F3J__DrImo6cht0LlCxCP6MLPgKuz70=&xsec_source=pc_search&source=web_profile_page"
     ]
     all_data = []
     for url in url_list:

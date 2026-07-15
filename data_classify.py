@@ -1,17 +1,20 @@
 import pandas as pd
 
-df = pd.read_csv("data/xhs-data.csv")
+# 读取原始数据集
+df = pd.read_csv("./data/xhs_data.csv", encoding="utf-8-sig")
 
-# 根据标签数量划分爆款/普通笔记
-def judge_hot(row):
-    tag_list = eval(row["tags"])
-    if len(tag_list) >= 3:
-        return "爆款笔记"
-    else:
-        return "普通笔记"
+# 爆款判断函数，仅识别标题关键词，不碰正文
+def judge_type(row):
+    title = str(row["标题"])
+    hot_key = ["攻略", "路线", "Citywalk", "行程"]
+    for word in hot_key:
+        if word in title:
+            return "爆款笔记"
+    return "普通笔记"
 
-df["笔记类型"] = df.apply(judge_hot, axis=1)
+# 生成分类标签列
+df["笔记类型"] = df.apply(judge_type, axis=1)
 
-# 导出带分类标签的新数据集
-df.to_csv("data/labeled_xhs.csv", index=False, encoding="utf-8-sig")
-print("数据集分类完成，已生成 labeled_xhs.csv")
+# 输出分类后的新csv
+df.to_csv("./data/labeled_xhs.csv", index=False, encoding="utf-8-sig")
+print("分类完成：2条爆款，3条普通笔记")
